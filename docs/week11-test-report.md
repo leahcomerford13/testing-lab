@@ -80,8 +80,9 @@ Result after correction: `test_deploy_excludes_other_files` passed. All 4 deploy
 
 ### Final verification
 
-Command and result for deployment tests: `python -m pytest tests/test_deploy_config.py -v` -> 4 passed in 0.08s
-<img width="952" height="358" alt="image" src="https://github.com/user-attachments/assets/8d7958ab-6351-4082-b518-01967f218fba" />
+Command and result for deployment tests: `python -m pytest tests/test_deploy_config.py -v` -> 4 passed in 0.07s
+<img width="1122" height="320" alt="image" src="https://github.com/user-attachments/assets/daf6e10b-9738-43b1-bc9f-9518f390df7c" />
+
 
 
 
@@ -90,6 +91,7 @@ Command and result for the full test suite: `python -m pytest -q` -> 24 passed i
 
 
 Anything not tested: I did not test a real server or cloud deployment, a large number of files or  uppercase `.JSON` files.
+
 
 
 
