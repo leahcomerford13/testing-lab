@@ -57,10 +57,11 @@ check actual files, contents, returned paths and errors.
 <img width="982" height="306" alt="image" src="https://github.com/user-attachments/assets/2f14b2ae-0df6-496b-8b02-dc8cc178344b" />
 
 | D-T3 | Source exists but is empty | Destination is created and empty; returns `[]` | Passed. The destination was created, it was empty and `[]` was returned | Pass |
-<img width="980" height="241" alt="image" src="https://github.com/user-attachments/assets/4c99545e-85a2-4521-b0e7-96f54b920df0" />
+<img width="959" height="298" alt="image" src="https://github.com/user-attachments/assets/c9d20051-0a0c-4031-ac21-472ec3d5db6b" />
+
 
 | D-T4 | Source directory does not exist | `FileNotFoundError` is raised; destination is not created | Passed. The error was raised and no destination was made | Pass |
-<img width="959" height="236" alt="image" src="https://github.com/user-attachments/assets/f0207e40-1ead-4716-a9af-62a2caa38550" />
+<img width="974" height="281" alt="image" src="https://github.com/user-attachments/assets/e0ce6aa7-acfe-4ed0-badd-a98db4cc91b6" />
 
 
 ### Defect investigation
@@ -80,7 +81,8 @@ Result after correction: `test_deploy_excludes_other_files` passed. All 4 deploy
 ### Final verification
 
 Command and result for deployment tests: `python -m pytest tests/test_deploy_config.py -v` -> 4 passed in 0.08s
-<img width="950" height="295" alt="image" src="https://github.com/user-attachments/assets/afb86fd2-40a6-49ac-95a3-ec0b17eab590" />
+<img width="952" height="358" alt="image" src="https://github.com/user-attachments/assets/8d7958ab-6351-4082-b518-01967f218fba" />
+
 
 
 Command and result for the full test suite: `python -m pytest -q` -> 24 passed in 0.09s
@@ -88,5 +90,6 @@ Command and result for the full test suite: `python -m pytest -q` -> 24 passed i
 
 
 Anything not tested: I did not test a real server or cloud deployment, a large number of files or  uppercase `.JSON` files.
+
 
 
